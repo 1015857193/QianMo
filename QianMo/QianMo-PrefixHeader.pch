@@ -1,0 +1,66 @@
+//
+//  QianMo-PrefixHeader.pch
+//  QianMo
+//
+//  Created by 卢洋 on 16/9/24.
+//  Copyright © 2016年 Myself. All rights reserved.
+//
+
+#ifndef QianMo_PrefixHeader_pch
+#define QianMo_PrefixHeader_pch
+
+#define Screen_Width [UIScreen mainScreen].bounds.size.width
+#define Screen_Height [UIScreen mainScreen].bounds.size.height
+
+#define ISIPHONE3_5  CGSizeEqualToSize(CGSizeMake(320, 480), [[UIScreen mainScreen] bounds].size)
+#define ISIPHONE4_0  CGSizeEqualToSize(CGSizeMake(320, 568), [[UIScreen mainScreen] bounds].size)
+#define ISIPHONE4_7  CGSizeEqualToSize(CGSizeMake(375, 667), [[UIScreen mainScreen] bounds].size)
+#define ISIPHONE5_5  CGSizeEqualToSize(CGSizeMake(414, 736), [[UIScreen mainScreen] bounds].size)
+#define ISIPHONE9_7  CGSizeEqualToSize(CGSizeMake(768, 1024), [[UIScreen mainScreen] bounds].size)
+
+//http 报文头 key相关
+#define NWP_KEY_SIGNATURE (@"signature")
+#define NWP_KEY_UUID (@"X-Uuid")
+#define NWP_KEY_PLATFORM (@"X-Platform")
+#define NWP_KEY_VERSION (@"X-Version")
+#define NWP_KEY_TIME_STAMP (@"timestamp")
+
+//APP平台
+#define PLAT_FORM_NAME (@"IOS")
+//千陌的应用key
+#define QM_APP_KEY (@"Qm.inter*connect^app")
+
+#define ColorString(string) [Util colorWithHexString:string]
+#define SystemFont(size)    [UIFont systemFontOfSize:size] 
+#define CustomFont(str)    [UIFont fontWithName:@"BoldDigital" size:str]
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//网络请求
+#import "ServerHeader.h"
+
+///Users/luyang/Desktop/QianMoCompanyApp/QianMo/QianMo/QianMo-PrefixHeader.pch枚举列表
+#import "EnumList.h"
+
+#import "BaseModel.h"
+
+//3rd
+#import "Masonry.h"
+#import "AFNetworking.h"
+#import "MJExtension.h"
+#import "MJRefresh.h"
+#import "MBProgressHUD.h"
+#import <UIView+Toast.h>
+
+//helper
+#import "KHelper.h"
+#import "EUnit.h"
+#import "NetWorkMessage.h" 
+#import "Util.h"
+
+#import "UserInfoManager.h"
+#import "UserInfo.h"  
+
+
+#endif /* QianMo_PrefixHeader_pch */

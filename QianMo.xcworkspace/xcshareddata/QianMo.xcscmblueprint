@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "f6014e80-5001-0010-aed0-0fbe49867d84++8625",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "f6014e80-5001-0010-aed0-0fbe49867d84++8625" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "f6014e80-5001-0010-aed0-0fbe49867d84++8625" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "BB1211A9-5469-4103-90D4-41CEB6C0EE60",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "f6014e80-5001-0010-aed0-0fbe49867d84++8625" : "QianMoCompanyApp\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "QianMo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "QianMo\/QianMo.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/192.168.1.151\/svn\/qmdb",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "f6014e80-5001-0010-aed0-0fbe49867d84++8625"
+    }
+  ]
+}
