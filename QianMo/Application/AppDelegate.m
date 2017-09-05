@@ -23,7 +23,7 @@
     self.window =[[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor =[UIColor whiteColor];
     BaseTabBarController *baseTabBarCtrl =[[BaseTabBarController alloc]init];
-    self.window.rootViewController =baseTabBarCtrl;
+    
     
 //    BaseNavigationController *navViewCtrl =[[BaseNavigationController alloc]initWithRootViewController:[[LoginViewController alloc]init]];
     self.window.rootViewController =baseTabBarCtrl;
