@@ -40,8 +40,7 @@
 //网络请求
 #import "ServerHeader.h"
 
-///Users/luyang/Desktop/QianMoCompanyApp/QianMo/QianMo/QianMo-PrefixHeader.pch枚举列表
-#import "EnumList.h"
+
 
 #import "BaseModel.h"
 
@@ -53,11 +52,11 @@
 #import "MBProgressHUD.h"
 #import <UIView+Toast.h>
 
-//helper
-#import "KHelper.h"
-#import "EUnit.h"
-#import "NetWorkMessage.h" 
+
+
+
 #import "Util.h"
+#import "EUnit.h"
 
 #import "UserInfoManager.h"
 #import "UserInfo.h"  

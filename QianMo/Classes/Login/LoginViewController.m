@@ -12,6 +12,7 @@
 #import "BaseTabBarController.h"
 #import "AppDelegate.h"
 #import "RetrievePassViewController.h"
+#import "EUnit.h"
 
 @interface LoginViewController ()
 
@@ -218,42 +219,7 @@
     NSDictionary *param =@{@"phone":_numText.text,
                            @"password":password};
     
-   [NetWorkMessage requestWithparam:param Url:url progress:^(NSProgress *progress) {
-       
-       
-   } onSuccess:^(id result) {
-       
-       if (result) {
-         
-           if ([[result objectForKey:@"code"] integerValue]==1) {
-               
-               NSLog(@"成功");
-               BaseTabBarController *tabBarCtrl =[[BaseTabBarController alloc]init];
-               AppDelegate *appDelegate =(AppDelegate *)[[UIApplication sharedApplication]delegate];
-               appDelegate.window.rootViewController =tabBarCtrl;
-               
-           }
-           
-           
-           
-           
-           
-  
-       }
-       
-       //登录成功 保存信息
-//       [self saveCurrentUserInfo:];
-//       
-//       BaseTabBarController *tabBarCtrl =[[BaseTabBarController alloc]init];
-//       AppDelegate *appDelegate =(AppDelegate *)[[UIApplication sharedApplication]delegate];
-//       appDelegate.window.rootViewController =tabBarCtrl;
-       
-       
-       
-    } onFailure:^(NSError *error) {
-       
-          
-   }];
+ 
      
 
 

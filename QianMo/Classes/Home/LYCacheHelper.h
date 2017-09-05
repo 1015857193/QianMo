@@ -1,14 +1,10 @@
 //
-//  ZYCacheHelper.h
-//  ZYNetWorking
-//
-//  Created by allen on 2017/5/2.
-//  Copyright © 2017年 allen. All rights reserved.
+
 //
 
 #import <Foundation/Foundation.h>
 
-@interface ZYCacheHelper : NSObject
+@interface LYCacheHelper : NSObject
 
 
 +(instancetype )sharedInstance;

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		350D204E1DBA64C5002BD018 /* RetrievePassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 350D204D1DBA64C5002BD018 /* RetrievePassViewController.m */; };
-		350D20501DBB0029002BD018 /* BoldDigital.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 350D204F1DBB0029002BD018 /* BoldDigital.ttf */; };
 		35120CAD1D967EC000B36FDE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35120CAC1D967EC000B36FDE /* main.m */; };
 		35120CB81D967EC000B36FDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35120CB71D967EC000B36FDE /* Assets.xcassets */; };
 		35120CBB1D967EC000B36FDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35120CB91D967EC000B36FDE /* LaunchScreen.storyboard */; };
@@ -24,13 +23,8 @@
 		3524C4371DACD630009853D2 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3524C4361DACD630009853D2 /* LoginViewController.m */; };
 		3524C43B1DACE44D009853D2 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 3524C43A1DACE44D009853D2 /* Util.m */; };
 		3524C43E1DACE4BC009853D2 /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 3524C43D1DACE4BC009853D2 /* Config.m */; };
-		352770C31F53FC9400CFA08C /* ZYCacheHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 352770C21F53FC9400CFA08C /* ZYCacheHelper.m */; };
+		352770C31F53FC9400CFA08C /* LYCacheHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 352770C21F53FC9400CFA08C /* LYCacheHelper.m */; };
 		352D80EE1F1793B700E490FF /* HomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 352D80ED1F1793B700E490FF /* HomeModel.m */; };
-		35453F031DB7770100A44DC6 /* KCMessageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 35453F001DB7770100A44DC6 /* KCMessageHelper.m */; };
-		35453F041DB7770100A44DC6 /* KHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 35453F021DB7770100A44DC6 /* KHelper.m */; };
-		35453F0E1DB77C0A00A44DC6 /* EnumList.m in Sources */ = {isa = PBXBuildFile; fileRef = 35453F0D1DB77C0A00A44DC6 /* EnumList.m */; };
-		35453F1C1DB9ABEC00A44DC6 /* NetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 35453F191DB9ABEC00A44DC6 /* NetWorkManager.m */; };
-		35453F1D1DB9ABEC00A44DC6 /* NetWorkMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 35453F1B1DB9ABEC00A44DC6 /* NetWorkMessage.m */; };
 		35453F231DB9B0F300A44DC6 /* EUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 35453F221DB9B0F300A44DC6 /* EUnit.m */; };
 		35AC1ED41F3C58D600D708DE /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35AC1ED31F3C58D600D708DE /* FirstViewController.m */; };
 		35DF58471D9905F400C7F9FD /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DF58461D9905F400C7F9FD /* HomeViewController.m */; };
@@ -61,7 +55,6 @@
 		12DA18FAA09FAD55636B9181 /* libPods-QianMo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QianMo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		350D204C1DBA64C5002BD018 /* RetrievePassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RetrievePassViewController.h; sourceTree = "<group>"; };
 		350D204D1DBA64C5002BD018 /* RetrievePassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RetrievePassViewController.m; sourceTree = "<group>"; };
-		350D204F1DBB0029002BD018 /* BoldDigital.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BoldDigital.ttf; sourceTree = "<group>"; };
 		35120CA81D967EC000B36FDE /* QianMo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QianMo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35120CAC1D967EC000B36FDE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		35120CB71D967EC000B36FDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -94,21 +87,11 @@
 		3524C43A1DACE44D009853D2 /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
 		3524C43C1DACE4BC009853D2 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		3524C43D1DACE4BC009853D2 /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
-		352770C11F53FC9400CFA08C /* ZYCacheHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZYCacheHelper.h; path = ../Classes/Home/ZYCacheHelper.h; sourceTree = "<group>"; };
-		352770C21F53FC9400CFA08C /* ZYCacheHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZYCacheHelper.m; path = ../Classes/Home/ZYCacheHelper.m; sourceTree = "<group>"; };
+		352770C11F53FC9400CFA08C /* LYCacheHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LYCacheHelper.h; path = ../Classes/Home/LYCacheHelper.h; sourceTree = "<group>"; };
+		352770C21F53FC9400CFA08C /* LYCacheHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LYCacheHelper.m; path = ../Classes/Home/LYCacheHelper.m; sourceTree = "<group>"; };
 		352D80EC1F1793B700E490FF /* HomeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeModel.h; sourceTree = "<group>"; };
 		352D80ED1F1793B700E490FF /* HomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeModel.m; sourceTree = "<group>"; };
-		35453EFF1DB7770100A44DC6 /* KCMessageHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCMessageHelper.h; sourceTree = "<group>"; };
-		35453F001DB7770100A44DC6 /* KCMessageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCMessageHelper.m; sourceTree = "<group>"; };
-		35453F011DB7770100A44DC6 /* KHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHelper.h; sourceTree = "<group>"; };
-		35453F021DB7770100A44DC6 /* KHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KHelper.m; sourceTree = "<group>"; };
 		35453F0A1DB77B9400A44DC6 /* ServerHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerHeader.h; sourceTree = "<group>"; };
-		35453F0C1DB77C0A00A44DC6 /* EnumList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnumList.h; sourceTree = "<group>"; };
-		35453F0D1DB77C0A00A44DC6 /* EnumList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnumList.m; sourceTree = "<group>"; };
-		35453F181DB9ABEC00A44DC6 /* NetWorkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkManager.h; sourceTree = "<group>"; };
-		35453F191DB9ABEC00A44DC6 /* NetWorkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkManager.m; sourceTree = "<group>"; };
-		35453F1A1DB9ABEC00A44DC6 /* NetWorkMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkMessage.h; sourceTree = "<group>"; };
-		35453F1B1DB9ABEC00A44DC6 /* NetWorkMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkMessage.m; sourceTree = "<group>"; };
 		35453F211DB9B0F300A44DC6 /* EUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUnit.h; sourceTree = "<group>"; };
 		35453F221DB9B0F300A44DC6 /* EUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EUnit.m; sourceTree = "<group>"; };
 		35AC1ED21F3C58D600D708DE /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
@@ -185,10 +168,7 @@
 		35120CAA1D967EC000B36FDE /* QianMo */ = {
 			isa = PBXGroup;
 			children = (
-				352770C41F53FE3700CFA08C /* 3rd */,
-				35453F0B1DB77BBB00A44DC6 /* Enum */,
-				35453EFE1DB776E400A44DC6 /* Helper */,
-				35453EF21DB7728300A44DC6 /* NetWork */,
+				352770C41F53FE3700CFA08C /* ThirdParty */,
 				3524C4381DACE40D009853D2 /* Utils */,
 				3524C4221DACD133009853D2 /* Base */,
 				3524C41B1DACD0AB009853D2 /* UserInfo */,
@@ -202,7 +182,6 @@
 		35120CAB1D967EC000B36FDE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				350D204F1DBB0029002BD018 /* BoldDigital.ttf */,
 				35120CBC1D967EC000B36FDE /* Info.plist */,
 				35120CB71D967EC000B36FDE /* Assets.xcassets */,
 				35120CAC1D967EC000B36FDE /* main.m */,
@@ -290,44 +269,14 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		352770C41F53FE3700CFA08C /* 3rd */ = {
+		352770C41F53FE3700CFA08C /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
-				352770C11F53FC9400CFA08C /* ZYCacheHelper.h */,
-				352770C21F53FC9400CFA08C /* ZYCacheHelper.m */,
+				352770C11F53FC9400CFA08C /* LYCacheHelper.h */,
+				352770C21F53FC9400CFA08C /* LYCacheHelper.m */,
 			);
+			name = ThirdParty;
 			path = 3rd;
-			sourceTree = "<group>";
-		};
-		35453EF21DB7728300A44DC6 /* NetWork */ = {
-			isa = PBXGroup;
-			children = (
-				35453F181DB9ABEC00A44DC6 /* NetWorkManager.h */,
-				35453F191DB9ABEC00A44DC6 /* NetWorkManager.m */,
-				35453F1A1DB9ABEC00A44DC6 /* NetWorkMessage.h */,
-				35453F1B1DB9ABEC00A44DC6 /* NetWorkMessage.m */,
-			);
-			path = NetWork;
-			sourceTree = "<group>";
-		};
-		35453EFE1DB776E400A44DC6 /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-				35453EFF1DB7770100A44DC6 /* KCMessageHelper.h */,
-				35453F001DB7770100A44DC6 /* KCMessageHelper.m */,
-				35453F011DB7770100A44DC6 /* KHelper.h */,
-				35453F021DB7770100A44DC6 /* KHelper.m */,
-			);
-			path = Helper;
-			sourceTree = "<group>";
-		};
-		35453F0B1DB77BBB00A44DC6 /* Enum */ = {
-			isa = PBXGroup;
-			children = (
-				35453F0C1DB77C0A00A44DC6 /* EnumList.h */,
-				35453F0D1DB77C0A00A44DC6 /* EnumList.m */,
-			);
-			path = Enum;
 			sourceTree = "<group>";
 		};
 		35DF58401D99050500C7F9FD /* Classes */ = {
@@ -498,7 +447,6 @@
 			files = (
 				35120CBB1D967EC000B36FDE /* LaunchScreen.storyboard in Resources */,
 				35120CB81D967EC000B36FDE /* Assets.xcassets in Resources */,
-				350D20501DBB0029002BD018 /* BoldDigital.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,18 +538,13 @@
 				35DF584D1D99068100C7F9FD /* DriverViewController.m in Sources */,
 				35453F231DB9B0F300A44DC6 /* EUnit.m in Sources */,
 				3524C42C1DACD183009853D2 /* BaseNavigationController.m in Sources */,
-				352770C31F53FC9400CFA08C /* ZYCacheHelper.m in Sources */,
-				35453F1D1DB9ABEC00A44DC6 /* NetWorkMessage.m in Sources */,
+				352770C31F53FC9400CFA08C /* LYCacheHelper.m in Sources */,
 				3524C43E1DACE4BC009853D2 /* Config.m in Sources */,
-				35453F041DB7770100A44DC6 /* KHelper.m in Sources */,
 				35DF58501D99069800C7F9FD /* DeviceViewController.m in Sources */,
 				3524C41E1DACD0C6009853D2 /* UserInfo.m in Sources */,
 				3524C4341DACD30C009853D2 /* UserInfoManager.m in Sources */,
 				350D204E1DBA64C5002BD018 /* RetrievePassViewController.m in Sources */,
 				35DF58471D9905F400C7F9FD /* HomeViewController.m in Sources */,
-				35453F1C1DB9ABEC00A44DC6 /* NetWorkManager.m in Sources */,
-				35453F0E1DB77C0A00A44DC6 /* EnumList.m in Sources */,
-				35453F031DB7770100A44DC6 /* KCMessageHelper.m in Sources */,
 				352D80EE1F1793B700E490FF /* HomeModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,7 +10,7 @@
 #import "HomeModel.h"
 #import "FirstViewController.h"
 #import <YYKit.h>
-#import "ZYCacheHelper.h"
+#import "LYCacheHelper.h"
 
 @interface HomeViewController ()
 
@@ -42,7 +42,7 @@
     [array addObject:task];
     
     
-    [[ZYCacheHelper sharedInstance] saveResponseCache:array forKey:@"cacheArray"];
+    [[LYCacheHelper sharedInstance] saveResponseCache:array forKey:@"cacheArray"];
     
     NSLog(@"___%ld",array.count);
     
