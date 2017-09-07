@@ -23,9 +23,9 @@
 		3524C4371DACD630009853D2 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3524C4361DACD630009853D2 /* LoginViewController.m */; };
 		3524C43B1DACE44D009853D2 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 3524C43A1DACE44D009853D2 /* Util.m */; };
 		3524C43E1DACE4BC009853D2 /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 3524C43D1DACE4BC009853D2 /* Config.m */; };
-		352770C31F53FC9400CFA08C /* LYCacheHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 352770C21F53FC9400CFA08C /* LYCacheHelper.m */; };
 		352D80EE1F1793B700E490FF /* HomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 352D80ED1F1793B700E490FF /* HomeModel.m */; };
 		35453F231DB9B0F300A44DC6 /* EUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 35453F221DB9B0F300A44DC6 /* EUnit.m */; };
+		35766CDF1F60E12D00D09702 /* LYAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35766CDE1F60E12D00D09702 /* LYAlertView.m */; };
 		35AC1ED41F3C58D600D708DE /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35AC1ED31F3C58D600D708DE /* FirstViewController.m */; };
 		35DF58471D9905F400C7F9FD /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DF58461D9905F400C7F9FD /* HomeViewController.m */; };
 		35DF584D1D99068100C7F9FD /* DriverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DF584C1D99068100C7F9FD /* DriverViewController.m */; };
@@ -87,13 +87,13 @@
 		3524C43A1DACE44D009853D2 /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
 		3524C43C1DACE4BC009853D2 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		3524C43D1DACE4BC009853D2 /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
-		352770C11F53FC9400CFA08C /* LYCacheHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LYCacheHelper.h; path = ../Classes/Home/LYCacheHelper.h; sourceTree = "<group>"; };
-		352770C21F53FC9400CFA08C /* LYCacheHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LYCacheHelper.m; path = ../Classes/Home/LYCacheHelper.m; sourceTree = "<group>"; };
 		352D80EC1F1793B700E490FF /* HomeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeModel.h; sourceTree = "<group>"; };
 		352D80ED1F1793B700E490FF /* HomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeModel.m; sourceTree = "<group>"; };
 		35453F0A1DB77B9400A44DC6 /* ServerHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerHeader.h; sourceTree = "<group>"; };
 		35453F211DB9B0F300A44DC6 /* EUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUnit.h; sourceTree = "<group>"; };
 		35453F221DB9B0F300A44DC6 /* EUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EUnit.m; sourceTree = "<group>"; };
+		35766CDD1F60E12D00D09702 /* LYAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYAlertView.h; sourceTree = "<group>"; };
+		35766CDE1F60E12D00D09702 /* LYAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYAlertView.m; sourceTree = "<group>"; };
 		35AC1ED21F3C58D600D708DE /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		35AC1ED31F3C58D600D708DE /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		35DF58451D9905F400C7F9FD /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
@@ -168,7 +168,7 @@
 		35120CAA1D967EC000B36FDE /* QianMo */ = {
 			isa = PBXGroup;
 			children = (
-				352770C41F53FE3700CFA08C /* ThirdParty */,
+				35766CDC1F60E10E00D09702 /* ThirdParty */,
 				3524C4381DACE40D009853D2 /* Utils */,
 				3524C4221DACD133009853D2 /* Base */,
 				3524C41B1DACD0AB009853D2 /* UserInfo */,
@@ -269,14 +269,13 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		352770C41F53FE3700CFA08C /* ThirdParty */ = {
+		35766CDC1F60E10E00D09702 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
-				352770C11F53FC9400CFA08C /* LYCacheHelper.h */,
-				352770C21F53FC9400CFA08C /* LYCacheHelper.m */,
+				35766CDD1F60E12D00D09702 /* LYAlertView.h */,
+				35766CDE1F60E12D00D09702 /* LYAlertView.m */,
 			);
-			name = ThirdParty;
-			path = 3rd;
+			path = ThirdParty;
 			sourceTree = "<group>";
 		};
 		35DF58401D99050500C7F9FD /* Classes */ = {
@@ -538,13 +537,13 @@
 				35DF584D1D99068100C7F9FD /* DriverViewController.m in Sources */,
 				35453F231DB9B0F300A44DC6 /* EUnit.m in Sources */,
 				3524C42C1DACD183009853D2 /* BaseNavigationController.m in Sources */,
-				352770C31F53FC9400CFA08C /* LYCacheHelper.m in Sources */,
 				3524C43E1DACE4BC009853D2 /* Config.m in Sources */,
 				35DF58501D99069800C7F9FD /* DeviceViewController.m in Sources */,
 				3524C41E1DACD0C6009853D2 /* UserInfo.m in Sources */,
 				3524C4341DACD30C009853D2 /* UserInfoManager.m in Sources */,
 				350D204E1DBA64C5002BD018 /* RetrievePassViewController.m in Sources */,
 				35DF58471D9905F400C7F9FD /* HomeViewController.m in Sources */,
+				35766CDF1F60E12D00D09702 /* LYAlertView.m in Sources */,
 				352D80EE1F1793B700E490FF /* HomeModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

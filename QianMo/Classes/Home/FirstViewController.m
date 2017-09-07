@@ -8,7 +8,7 @@
 
 #import "FirstViewController.h"
 #import <YYKit.h>
-#import "LYCacheHelper.h"
+
 
 @interface FirstViewController ()
 
@@ -23,9 +23,9 @@
     self.view.backgroundColor =[UIColor redColor];
     
     
-    NSArray *array =(NSArray *)[[LYCacheHelper sharedInstance] getResponseCacheForKey:@"cacheArray"];
+   
     
-    NSLog(@"___%@",array);
+  
     
     
 }

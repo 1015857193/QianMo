@@ -10,15 +10,27 @@
 #import "HomeModel.h"
 #import "FirstViewController.h"
 #import <YYKit.h>
-#import "LYCacheHelper.h"
+
 
 @interface HomeViewController ()
 
 @property (nonatomic,strong)NSString *string;
 
+@property (nonatomic,assign)BOOL isNetWork;
+
+
+
 @end
 
 @implementation HomeViewController
+
+
+- (void)dealloc{
+
+    [self removeObserver:self forKeyPath:@"isNetWork"];
+
+
+}
 
 - (void)viewWillAppear:(BOOL)animated{
     
@@ -30,6 +42,11 @@
     [super viewDidLoad];
    self.title =@"首页";
     
+  
+    
+    [self isWifi];
+ 
+    [self addObserver:self forKeyPath:@"isNetWork" options:NSKeyValueObservingOptionNew  context:nil];
    
     HomeModel *model =[[HomeModel alloc]init];
     
@@ -42,9 +59,7 @@
     [array addObject:task];
     
     
-    [[LYCacheHelper sharedInstance] saveResponseCache:array forKey:@"cacheArray"];
-    
-    NSLog(@"___%ld",array.count);
+  
     
     
     
@@ -63,6 +78,55 @@
    
 }
 
+- (void)isWifi{
+
+
+
+    AFNetworkReachabilityManager *manger = [AFNetworkReachabilityManager sharedManager];
+    //开启监听，记得开启，不然不走block
+    [manger startMonitoring];
+    //2.监听改变
+    [manger setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+        
+        switch (status) {
+                
+            case AFNetworkReachabilityStatusUnknown:
+                
+                _isNetWork =NO;
+                
+                break;
+                
+            case AFNetworkReachabilityStatusNotReachable:
+                
+                _isNetWork =NO;
+                
+                break;
+                
+            case AFNetworkReachabilityStatusReachableViaWWAN:
+                
+                _isNetWork =YES;
+                
+                break;
+                
+            case AFNetworkReachabilityStatusReachableViaWiFi:
+                
+                _isNetWork =YES;
+                
+                break;
+                
+            default:
+                
+                break;
+        }
+    }];
+    
+    [manger stopMonitoring];
+
+    
+    
+    
+}
+
 
 - (void)inputDeviceAction{
 
@@ -76,6 +140,9 @@
 
 
 }
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
