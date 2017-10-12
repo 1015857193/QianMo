@@ -14,7 +14,7 @@
 
 @interface HomeViewController ()
 
-@property (nonatomic,strong)NSString *string;
+@property (nonatomic,copy)NSString *string;
 
 @property (nonatomic,assign)BOOL isNetWork;
 
@@ -36,13 +36,17 @@
     
     [super viewWillAppear:animated];
     
+    NSLog(@"__%@__%@",[self description],self.string);
+    
 }
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
    self.title =@"首页";
     
-  
+   self.string =@"haha";
     
     [self isWifi];
  
@@ -132,6 +136,8 @@
 
   
     FirstViewController *first =[[FirstViewController alloc]init];
+    
+    first.string =self.string;
     
     [self.navigationController pushViewController:first animated:YES];
 

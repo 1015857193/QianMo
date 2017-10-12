@@ -10,4 +10,6 @@
 
 @interface FirstViewController : UIViewController
 
+@property(nonatomic,copy)NSString *string;
+
 @end
