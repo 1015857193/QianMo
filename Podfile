@@ -12,6 +12,7 @@ pod 'MBProgressHUD', '~> 1.0.0'
 pod 'Toast', '~> 3.0'
 pod 'YYKit', '~> 1.0.9'
 pod 'GPUImage', '~> 0.1.7'
-
+pod 'LYAVPlayer','~> 1.0.1'
+pod 'VIMVideoPlayer', '~> 6.0.1'
 
 end

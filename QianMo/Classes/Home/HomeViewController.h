@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
+
+extern NSString *const notiString;
+
 @interface HomeViewController : BaseViewController
 
 

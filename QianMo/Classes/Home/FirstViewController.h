@@ -12,4 +12,6 @@
 
 @property(nonatomic,copy)NSString *string;
 
++ (instancetype )sharedInstance;
+
 @end

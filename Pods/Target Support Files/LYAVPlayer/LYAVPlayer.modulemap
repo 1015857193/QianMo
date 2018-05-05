@@ -1,0 +1,6 @@
+framework module LYAVPlayer {
+  umbrella header "LYAVPlayer-umbrella.h"
+
+  export *
+  module * { export * }
+}

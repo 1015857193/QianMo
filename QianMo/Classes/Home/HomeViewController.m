@@ -10,9 +10,15 @@
 #import "HomeModel.h"
 #import "FirstViewController.h"
 #import "YYKit.h"
+#import "LYAlertView.h"
+
+NSString *const notiString =@"notiString";
 
 
-@interface HomeViewController ()
+@interface HomeViewController ()<UIWebViewDelegate>{
+    
+    UIWebView *webView;
+}
 
 @property (nonatomic,copy)NSString *string;
 
@@ -135,15 +141,39 @@
 - (void)inputDeviceAction{
 
   
-    FirstViewController *first =[[FirstViewController alloc]init];
+//    FirstViewController *first =[FirstViewController sharedInstance];
+//
+//    first.string =self.string;
+//
+//    [self.navigationController pushViewController:first animated:YES];
+
+//    LYAlertView *alertView =[[LYAlertView alloc]initWithTitle:@"提示" message:@"来消息了" confirmBlock:^(id sender) {
+//
+//
+//        NSLog(@"确定");
+//
+//
+//    } cancelBlock:^(id sender) {
+//
+//        NSLog(@"取消");
+//
+//    }];
+//
+//    [alertView show];
+//
     
-    first.string =self.string;
+    webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 64,Screen_Width,Screen_Height-64)];
+    webView.backgroundColor = [UIColor whiteColor];
+    webView.delegate = self;
+    webView.opaque = NO;
+    webView.scalesPageToFit =YES;
+    webView.scrollView.bounces = NO;
     
-    [self.navigationController pushViewController:first animated:YES];
-
-
-
-
+    self.view.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:webView];
+    
+    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://192.168.4.216/cch5/index2.html"]]];
+    
 
 }
 
